@@ -50,6 +50,34 @@
         <link rel="apple-touch-startup-image" href="img/splash/ios/splash1536x2008.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
         <link rel="apple-touch-startup-image" href="img/splash/ios/splash1496x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
             
+        <style type="text/css">
+
+            body {
+              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+              margin: auto;
+              position: relative;
+              width: 960px;
+            }
+
+            text {
+              font: 10px sans-serif;
+            }
+
+            .axis path,
+            .axis line {
+              fill: none;
+              stroke: #000;
+              shape-rendering: crispEdges;
+            }
+
+            form {
+              position: absolute;
+              right: 10px;
+              top: 10px;
+            }
+
+        </style>       
+
         <!-- ADD2HOME META TAGS -->
         <link rel="stylesheet" type="text/css" href="js/lib/add2home.css">
         <script type="application/javascript" src="js/lib/add2home.js"></script>
@@ -60,79 +88,43 @@
     </head> 
 
      
-    <body style="background-color:light blue;"
+    <body style="background-color:light blue;">
       <h1 style="font-family:verdana;"></h1>
         <h1 style="font-family:verdana;font-size:26px;">Welcome!</h1>
 
         <p style="font-family:arial;color:black;font-size:20px;">Hello! Welcome to Diabetastic! It is our goal to help you manage you diabetes. We will help you monitor your stress, sugar intake, and exercise throughout the day to help you understand when and why your peaks are occuring.</p>
 
-       <p>Just testing to see where this ends up</p>
-
-       <p>This is also just another test.</p>
-
     <p><form name="food" action="" method="get">
-        Food Consumption: <input type="text" name="starch">
+        Food Consumption: <input type="text" name="starch" id="starch">
        
-        Exercise Levels: <input type="text" name="exercise">
+        Exercise Levels: <input type="text" name="exercise" id="exercise">
         
-        Stress Levels: <input type="text" name="stress">
+        Stress Levels: <input type="text" name="stress" id="stress">
 
         <input type="submit" value="Submit">
 
         </form></p>
 
-<script type="text/javascript">
-            function onSubmit()
-            {
-                var a=document.forms["food"]["starch"].value;
-                var b=document.forms["health"]["exercise"].value;
-                var c=document.forms["stress"]["levels"].value;
-            }
-            
 
-      <a href="http://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-management/art-20047963"><button type="button">Find out more about managing diebetes!</button></a>
+      <a href="http://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-management/art-20047963"> <button type="button">Find out more about managing diebetes </button></a>
  
 
-      <BUTTON>Let's input some data!</BUTTON>
+      <BUTTON> Lets input some data </BUTTON>
 
-    
-        
+<meta charset="utf-8"> 
 
-<!DOCTYPE html>
-<meta charset="utf-8">
-<style>
 
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: auto;
-  position: relative;
-  width: 960px;
-}
+<!--WTF-->
 
-text {
-  font: 10px sans-serif;
-}
 
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
 
-form {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
 
-</style>
+
 <form>
   <label><input type="radio" name="mode" value="grouped"> Grouped</label>
   <label><input type="radio" name="mode" value="stacked" checked> Stacked</label>
 </form>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script>
+<script src="http://d3js.org/d3.v3.min.js">
 
 var n = 3, // number of layers
     m = 31, // number of samples per layer
@@ -251,8 +243,14 @@ function bumpLayer(n, o) {
   return a.map(function(d, i) { return {x: i, y: Math.max(0, d)}; });
 }
 
+    var FC = document.getElementById( "starch"   ).value,
+        EL = document.getElementById( "exercise" ).value,
+        SL = document.getElementById( "stress"   ).value;
+
+alert(FC);
+
 function getData( metric ) {
-    // implement code that gets the data you want and formats
+;// implement code that gets the data you want and formats
     // it as a single dimensional array
     // each time it runs it returns the data for a particular variable on a particular day
     var a;
@@ -272,7 +270,7 @@ function getData( metric ) {
     return a.map( function(d, i) { return { x:i, y: Math.max(0, d)}; });
 }
 
-</script>
+
 
 
 </script>
