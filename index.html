@@ -1,281 +1,257 @@
 <!doctype html>
+<!-- Test-->
 <html manifest="manifest.appcache" lang="en"> 
-	<head> 
-        <title>Diabtastic</title> 
-        
-        <!-- WEB SEARCH META TAGS -->
-        <meta charset="utf-8">
-        <meta name="application-name" content="APPLICATION NAME" />
-        <meta name="author" content="AUTHOR NAME (@TWITTER)" />
-        <meta name="description" content="APPLICATION DESCRIPTION" />
-        <meta name="keywords" content="keywords,separated,by,commas" />
-        <meta name="copyright" content="© 2013 AUTHOR" />
-        <meta name="generator" content="AUTHOR" />
-        <meta name="robots" content="index,follow,snippet,archive" />
-        <meta name="revisit-after" content="7 days">
-        
-        <!-- SAFARI WEB APP META TAGS -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <head> 
+    <title>Diabtastic</title> 
 
-        <!-- iOS FAVICONS -->
-        <link rel="apple-touch-icon-precomposed" href="img/icons/favicons/icon57.png">
-        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icons/favicons/icon57.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/favicons/icon72.png">
-        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/icons/favicons/icon76.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/favicons/icon114.png">
-        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/icons/favicons/icon120.png">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/icons/favicons/icon144.png">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/icons/favicons/icon152.png">
+    <!-- WEB SEARCH META TAGS -->
+    <meta charset="utf-8">
+    <meta name="application-name" content="APPLICATION NAME" />
+    <meta name="author" content="AUTHOR NAME (@TWITTER)" />
+    <meta name="description" content="APPLICATION DESCRIPTION" />
+    <meta name="keywords" content="keywords,separated,by,commas" />
+    <meta name="copyright" content="© 2013 AUTHOR" />
+    <meta name="generator" content="AUTHOR" />
+    <meta name="robots" content="index,follow,snippet,archive" />
+    <meta name="revisit-after" content="7 days">
 
-        <!-- OTHER FAVICONS -->
-        <link rel="icon" sizes="16x16" type="image/vnd.microsoft.icon" href="img/icons/favicons/icon16.ico">
-        <link rel="icon" sizes="16x16" type="image/png" href="img/icons/favicons/icon16.png">
-        <link rel="icon" sizes="32x32" type="image/png" href="img/icons/favicons/icon32.png">
-        <link rel="icon" sizes="64x64" type="image/png" href="img/icons/favicons/icon64.png">
-        <link rel="icon" sizes="any" type="image/svg+xml" href="img/icons/favicons/icon.svg">
+    <!-- SAFARI WEB APP META TAGS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-        <!-- iOS Splash Screens -->
-        <!-- iPhone -->
-        <link rel="apple-touch-startup-image" href="img/splash/ios/splash320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)">
-        <!-- iPhone (Retina) -->
-        <link rel="apple-touch-startup-image" href="img/splash/ios/splash640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
-        <!-- iPhone 5 -->
-        <link rel="apple-touch-startup-image" href="img/splash/ios/splash640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
-        <!-- iPad -->
-        <link rel="apple-touch-startup-image" href="img/splash/ios/splash768x1004.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)">
-        <link rel="apple-touch-startup-image" href="img/splash/ios/splash748x1024.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)">
-        <!-- iPad (Retina) -->
-        <link rel="apple-touch-startup-image" href="img/splash/ios/splash1536x2008.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
-        <link rel="apple-touch-startup-image" href="img/splash/ios/splash1496x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
-            
-        <style type="text/css">
+    <!-- iOS FAVICONS -->
+    <link rel="apple-touch-icon-precomposed" href="img/icons/favicons/icon57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icons/favicons/icon57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/favicons/icon72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/icons/favicons/icon76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/favicons/icon114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/icons/favicons/icon120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/icons/favicons/icon144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/icons/favicons/icon152.png">
 
-            body {
-              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-              margin: auto;
-              position: relative;
-              width: 960px;
-            }
+    <!-- OTHER FAVICONS -->
+    <link rel="icon" sizes="16x16" type="image/vnd.microsoft.icon" href="img/icons/favicons/icon16.ico">
+    <link rel="icon" sizes="16x16" type="image/png" href="img/icons/favicons/icon16.png">
+    <link rel="icon" sizes="32x32" type="image/png" href="img/icons/favicons/icon32.png">
+    <link rel="icon" sizes="64x64" type="image/png" href="img/icons/favicons/icon64.png">
+    <link rel="icon" sizes="any" type="image/svg+xml" href="img/icons/favicons/icon.svg">
 
-            text {
-              font: 10px sans-serif;
-            }
+    <!-- iOS Splash Screens -->
+    <!-- iPhone -->
+    <link rel="apple-touch-startup-image" href="img/splash/ios/splash320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)">
+    <!-- iPhone (Retina) -->
+    <link rel="apple-touch-startup-image" href="img/splash/ios/splash640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+    <!-- iPhone 5 -->
+    <link rel="apple-touch-startup-image" href="img/splash/ios/splash640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+    <!-- iPad -->
+    <link rel="apple-touch-startup-image" href="img/splash/ios/splash768x1004.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)">
+    <link rel="apple-touch-startup-image" href="img/splash/ios/splash748x1024.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)">
+    <!-- iPad (Retina) -->
+    <link rel="apple-touch-startup-image" href="img/splash/ios/splash1536x2008.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="img/splash/ios/splash1496x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
 
-            .axis path,
-            .axis line {
-              fill: none;
-              stroke: #000;
-              shape-rendering: crispEdges;
-            }
+    <style type="text/css">
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin: auto;
+        position: relative;
+        width: 960px;
+      }
 
-            form {
-              position: absolute;
-              right: 10px;
-              top: 10px;
-            }
+      text {
+        font: 10px sans-serif;
+      }
 
-        </style>       
+      .axis path,
+      .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
 
-        <!-- ADD2HOME META TAGS -->
-        <link rel="stylesheet" type="text/css" href="js/lib/add2home.css">
-        <script type="application/javascript" src="js/lib/add2home.js"></script>
+      form {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
 
+    </style>       
 
-        
-        </script>
-    </head> 
+    <!-- ADD2HOME META TAGS -->
+    <link rel="stylesheet" type="text/css" href="js/lib/add2home.css">
+  </head> 
+  <body style="background-color:lightblue;">
+    <h1 style="font-family:verdana;font-size:26px;">Welcome!</h1>
+    <p style="font-family:arial;color:black;font-size:20px;">
+          Hello! Welcome to Diabetastic! It is our goal to help you manage you diabetes. 
+          We will help you monitor your stress, sugar intake, and exercise throughout 
+          the day to help you understand when and why your peaks are occuring.
+    </p>
 
-     
-    <body style="background-color:light blue;">
-      <h1 style="font-family:verdana;"></h1>
-        <h1 style="font-family:verdana;font-size:26px;">Welcome!</h1>
-
-        <p style="font-family:arial;color:black;font-size:20px;">Hello! Welcome to Diabetastic! It is our goal to help you manage you diabetes. We will help you monitor your stress, sugar intake, and exercise throughout the day to help you understand when and why your peaks are occuring.</p>
-
-    <p><form name="food" action="" method="get">
-        Food Consumption: <input type="text" name="starch" id="starch">
-       
-        Exercise Levels: <input type="text" name="exercise" id="exercise">
-        
-        Stress Levels: <input type="text" name="stress" id="stress">
-
+    <p>
+      <form name="food" action="" method="get">
+        Food Consumption: <input type="text" name="starch"   id="starch">
+        Exercise Levels:  <input type="text" name="exercise" id="exercise">
+        Stress Levels:    <input type="text" name="stress"   id="stress">
         <input type="submit" value="Submit">
-
-        </form></p>
-
-
-      <a href="http://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-management/art-20047963"> <button type="button">Find out more about managing diebetes </button></a>
- 
-
-      <BUTTON> Lets input some data </BUTTON>
-
-<meta charset="utf-8"> 
-
-
-<!--WTF-->
-
-
-
-
-
-<form>
-  <label><input type="radio" name="mode" value="grouped"> Grouped</label>
-  <label><input type="radio" name="mode" value="stacked" checked> Stacked</label>
-</form>
-<script src="http://d3js.org/d3.v3.min.js">
-
-var n = 3, // number of layers
-    m = 31, // number of samples per layer
-    stack = d3.layout.stack(),
-    layers = stack(d3.range(n).map(function() { return getData( ); })),
-    yGroupMax = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y; }); }),
-    yStackMax = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; }); });
-
-var margin = {top: 40, right: 10, bottom: 20, left: 10},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
-
-var x = d3.scale.ordinal()
-    .domain(d3.range(m))
-    .rangeRoundBands([0, width], .08);
-
-var y = d3.scale.linear()
-    .domain([0, yStackMax])
-    .range([height, 0]);
-
-var color = d3.scale.linear()
-    .domain([0, n - 1])
-    .range(["#aad", "#556"]);
-
-var xAxis = d3.svg.axis()
-    .scale(x)
-    .tickSize(0)
-    .tickPadding(6)
-    .orient("bottom");
-
-var svg = d3.select("body").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-var layer = svg.selectAll(".layer")
-    .data(layers)
-  .enter().append("g")
-    .attr("class", "layer")
-    .style("fill", function(d, i) { return color(i); });
-
-var rect = layer.selectAll("rect")
-    .data(function(d) { return d; })
-  .enter().append("rect")
-    .attr("x", function(d) { return x(d.x); })
-    .attr("y", height)
-    .attr("width", x.rangeBand())
-    .attr("height", 0);
-
-rect.transition()
-    .delay(function(d, i) { return i * 10; })
-    .attr("y", function(d) { return y(d.y0 + d.y); })
-    .attr("height", function(d) { return y(d.y0) - y(d.y0 + d.y); });
-
-svg.append("g")
-    .attr("class", "x axis")
-    .attr("transform", "translate(0," + height + ")")
-    .call(xAxis);
-
-d3.selectAll("input").on("change", change);
-
-var timeout = setTimeout(function() {
-  d3.select("input[value=\"grouped\"]").property("checked", true).each(change);
-}, 2000);
-
-function change() {
-  clearTimeout(timeout);
-  if (this.value === "grouped") transitionGrouped();
-  else transitionStacked();
-}
-
-function transitionGrouped() {
-  y.domain([0, yGroupMax]);
-
-  rect.transition()
-      .duration(500)
-      .delay(function(d, i) { return i * 10; })
-      .attr("x", function(d, i, j) { return x(d.x) + x.rangeBand() / n * j; })
-      .attr("width", x.rangeBand() / n)
-    .transition()
-      .attr("y", function(d) { return y(d.y); })
-      .attr("height", function(d) { return height - y(d.y); });
-}
-
-function transitionStacked() {
-  y.domain([0, yStackMax]);
-
-  rect.transition()
-      .duration(500)
-      .delay(function(d, i) { return i * 10; })
-      .attr("y", function(d) { return y(d.y0 + d.y); })
-      .attr("height", function(d) { return y(d.y0) - y(d.y0 + d.y); })
-    .transition()
-      .attr("x", function(d) { return x(d.x); })
-      .attr("width", x.rangeBand());
-}1
-
-// Inspired by Lee Byron's test data generator.
-function bumpLayer(n, o) {
-
-  function bump(a) {
-    var x = 1 / (.1 + Math.random()),
-        y = 2 * Math.random() - .5,
-        z = 10 / (.1 + Math.random());
-    for (var i = 0; i < n; i++) {
-      var w = (i / n - y) * z;
-      a[i] += x * Math.exp(-w * w);
-    }
-  }
-
-  var a = [], i;
-  for (i = 0; i < n; ++i) a[i] = o + o * Math.random();
-  for (i = 0; i < 5; ++i) bump(a);
-  console.log( a );
-  return a.map(function(d, i) { return {x: i, y: Math.max(0, d)}; });
-}
-
-    var FC = document.getElementById( "starch"   ).value,
-        EL = document.getElementById( "exercise" ).value,
-        SL = document.getElementById( "stress"   ).value;
-
-alert(FC);
-
-function getData( metric ) {
-;// implement code that gets the data you want and formats
-    // it as a single dimensional array
-    // each time it runs it returns the data for a particular variable on a particular day
-    var a;
-    // which metric?
-    if ( 'carbs' == metric ) {
-        a = []; // array of 31 carb data points
-    } else if ( 'stress' == metric ) {
-
-    } else {
-
-    }
-
-
-    // returns a list of 31 data points for a single variable
-    var a = [ .1234, .2345, .3456 ];
-
-    return a.map( function(d, i) { return { x:i, y: Math.max(0, d)}; });
-}
-
-
-
-
-</script>
+      </form>
+    </p>
+    <a href="http://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-management/art-20047963"> <button type="button">Find out more about managing diebetes </button></a>
+    <form>
+      <label><input type="radio" name="mode" value="grouped"> Grouped</label>
+      <label><input type="radio" name="mode" value="stacked" checked> Stacked</label>
+    </form>
         
-        <!-- SCRIPTS -->
-        <script type="application/javascript" src="js/lib/jquery-2.0.3.js"></script>
-    </body>
+    <!-- SCRIPTS -->
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="application/javascript" src="js/lib/add2home.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript">
+
+      var n = 3, // number of layers
+          m = 31, // number of samples per layer
+          stack = d3.layout.stack(),
+          layers = stack(d3.range(n).map(function() { return getData( ); })),
+          yGroupMax = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y; }); }),
+          yStackMax = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; }); });
+
+      var margin = {top: 40, right: 10, bottom: 20, left: 10},
+          width = 960 - margin.left - margin.right,
+          height = 500 - margin.top - margin.bottom;
+
+      var x = d3.scale.ordinal()
+          .domain(d3.range(m))
+          .rangeRoundBands([0, width], .08);
+
+      var y = d3.scale.linear()
+          .domain([0, yStackMax])
+          .range([height, 0]);
+
+      var color = d3.scale.linear()
+          .domain([0, n - 1])
+          .range(["#aad", "#556"]);
+
+      var xAxis = d3.svg.axis()
+          .scale(x)
+          .tickSize(0)
+          .tickPadding(6)
+          .orient("bottom");
+
+      var svg = d3.select("body").append("svg")
+          .attr("width", width + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+      var layer = svg.selectAll(".layer")
+          .data(layers)
+        .enter().append("g")
+          .attr("class", "layer")
+          .style("fill", function(d, i) { return color(i); });
+
+      var rect = layer.selectAll("rect")
+          .data(function(d) { return d; })
+        .enter().append("rect")
+          .attr("x", function(d) { return x(d.x); })
+          .attr("y", height)
+          .attr("width", x.rangeBand())
+          .attr("height", 0);
+
+      rect.transition()
+          .delay(function(d, i) { return i * 10; })
+          .attr("y", function(d) { return y(d.y0 + d.y); })
+          .attr("height", function(d) { return y(d.y0) - y(d.y0 + d.y); });
+
+      svg.append("g")
+          .attr("class", "x axis")
+          .attr("transform", "translate(0," + height + ")")
+          .call(xAxis);
+
+      d3.selectAll("input").on("change", change);
+
+      var timeout = setTimeout(function() {
+        d3.select("input[value=\"grouped\"]").property("checked", true).each(change);
+      }, 2000);
+
+      function change() {
+        clearTimeout(timeout);
+        if (this.value === "grouped") transitionGrouped();
+        else transitionStacked();
+      }
+
+      function transitionGrouped() {
+        y.domain([0, yGroupMax]);
+
+        rect.transition()
+            .duration(500)
+            .delay(function(d, i) { return i * 10; })
+            .attr("x", function(d, i, j) { return x(d.x) + x.rangeBand() / n * j; })
+            .attr("width", x.rangeBand() / n)
+          .transition()
+            .attr("y", function(d) { return y(d.y); })
+            .attr("height", function(d) { return height - y(d.y); });
+      }
+
+      function transitionStacked() {
+        y.domain([0, yStackMax]);
+
+        rect.transition()
+            .duration(500)
+            .delay(function(d, i) { return i * 10; })
+            .attr("y", function(d) { return y(d.y0 + d.y); })
+            .attr("height", function(d) { return y(d.y0) - y(d.y0 + d.y); })
+          .transition()
+            .attr("x", function(d) { return x(d.x); })
+            .attr("width", x.rangeBand());
+      }
+
+      // Inspired by Lee Byron's test data generator.
+      function bumpLayer(n, o) {
+
+        function bump(a) {
+          var x = 1 / (.1 + Math.random()),
+              y = 2 * Math.random() - .5,
+              z = 10 / (.1 + Math.random());
+          for (var i = 0; i < n; i++) {
+            var w = (i / n - y) * z;
+            a[i] += x * Math.exp(-w * w);
+          }
+        }
+
+        var a = [], i;
+        for (i = 0; i < n; ++i) a[i] = o + o * Math.random();
+        for (i = 0; i < 5; ++i) bump(a);
+        console.log( a );
+        return a.map(function(d, i) { return {x: i, y: Math.max(0, d)}; });
+      }
+
+          var FC = document.getElementById( "starch"   ).value,
+              EL = document.getElementById( "exercise" ).value,
+              SL = document.getElementById( "stress"   ).value;
+
+      alert(FC);
+
+      function getData( metric ) {
+          // implement code that gets the data you want and formats
+          // it as a single dimensional array
+          // each time it runs it returns the data for a particular variable on a particular day
+          var a;
+          // which metric?
+          if ( 'carbs' == metric ) {
+              a = []; // array of 31 carb data points
+          } else if ( 'stress' == metric ) {
+
+          } else {
+
+          }
+
+
+          // returns a list of 31 data points for a single variable
+          var a = [ .1234, .2345, .3456 ];
+
+          return a.map( function(d, i) { return { x:i, y: Math.max(0, d)}; });
+      }
+    </script>
+  </body>
 </html>
